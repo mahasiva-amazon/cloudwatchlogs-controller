@@ -16,6 +16,9 @@ ignore:
     - CreateLogGroupInput.LogGroupClass
     - PutSubscriptionFilterInput.ApplyOnTransformedLogs
 operations:
+  DescribeLogGroups:
+    resource_name: LogGroup
+    operation_type: List
   PutResourcePolicy:
     resource_name: ResourcePolicy
     operation_type: Create
